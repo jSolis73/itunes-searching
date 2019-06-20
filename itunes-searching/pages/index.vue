@@ -1,12 +1,23 @@
 <template>
-  <div>
+  <div >
     <h1>Search Itunes</h1>
     <br/>
-    <form @submit.prevent="submit">
-      <input placeholder="Enter artist name"
-             v-model="search"
-             ref='search'>
-    </form>
+    <div class="form">
+      <form @submit.prevent="submit" >
+        <v-flex
+          xs12
+          md3
+          >
+          <v-text-field
+            v-model="search"
+            ref="serch"
+            label="Enter artist name"
+            required
+            style="align: center"
+          ></v-text-field>
+        </v-flex>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -31,6 +42,14 @@ export default {
 }
 h1 {
   padding: 20px;
+}
+.form {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    overflow: auto;
+    margin-left: 33%;
 }
 </style>
 
