@@ -1,8 +1,19 @@
 <template>
+  <section class="container">
   <div>
+    <Toolbar />
     <nuxt/>
   </div>
+  </section>
+
 </template>
+
+<script>
+import Toolbar from '../components/Toolbar'
+export default {
+  components: {Toolbar}
+}
+</script>
 
 <style>
 html {
