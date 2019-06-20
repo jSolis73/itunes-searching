@@ -21,19 +21,11 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['axios', 'vuetify']
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
-  }
+  },
+  plugins: ['~plugins/vuetify.js']
 }
 
