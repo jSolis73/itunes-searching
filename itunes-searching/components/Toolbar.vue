@@ -12,6 +12,7 @@
 </template>
 <script>
 </script>
+
 <style scoped>
 .title {
   text-decoration: none !important;

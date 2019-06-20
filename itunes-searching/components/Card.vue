@@ -1,6 +1,6 @@
 <template>
-  <div id="e3" style="max-width: 400px; margin: auto;"
-  class="grey lighten-3">
+  <div  id="e3" style="max-width: 400px; margin: auto;"
+        class="grey lighten-3">
         <v-container
         fluid
         style="min-height: 0;"

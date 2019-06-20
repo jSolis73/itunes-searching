@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     submit(event) {
-      this.$router.push(`result/${this.search}`)
+      this.$router.push(`results/${this.search}`)
     }
   },
 }
