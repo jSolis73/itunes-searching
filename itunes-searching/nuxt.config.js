@@ -10,7 +10,10 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel: 'styleshit',
+       href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'}
+
     ]
   },
   /*
@@ -26,6 +29,7 @@ module.exports = {
     ** Run ESLint on save
     */
   },
-  plugins: ['~plugins/vuetify.js']
+  plugins: ['~plugins/vuetify.js'],
+  css: ['~assets/app-styl']
 }
 
